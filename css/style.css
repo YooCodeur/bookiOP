@@ -23,14 +23,13 @@
 }
 .menu li {
     display: inline-block; 
-
 }
 
-
 body {
+    min-width: 1024px;
+    max-width: 1440px;
     display: flex;
     justify-content: center;
-    min-width: 1440px;
 }
 .header {
     height: 79px;
@@ -140,19 +139,23 @@ line-height: 19px;
     flex-shrink: 0;
     flex-basis: 40%; */
 }
-.activities > div > section {
+
+.activities > div > section > .divforactivitiesrow {
     display: flex; 
     flex-wrap: nowrap; 
     justify-content: space-between;
     padding-right: 10px;
 }
+
 .divforactivities{
     border-radius: 10px;
+    margin-left: 10px;
     min-height: 439px;
     max-height: 439px;
     box-shadow: 0px 3px 15px 0px #0000001A;
 }
 .activitiesinmarseille {
+    display: flex;
     margin-top: 50px;
     margin-bottom: 30px;
 }
@@ -205,7 +208,7 @@ margin-top: 10px;
     padding-left: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     box-sizing: border-box;
 }
 .card-content-hebergement .card-txt h3{
@@ -221,7 +224,7 @@ margin-bottom: 8px;
 #search-input {
     padding: 8px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc50;
 
 }
 #search-input::placeholder {
@@ -301,10 +304,6 @@ a {
 }
 
 /****** Hebergements And Populaires ***********/
-.hebergements-and-populaires {
-    /* display: flex;
-    justify-content: space-between; */
-}
 
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
@@ -386,22 +385,26 @@ a {
     }
 
     .hebergements {
-        width: 100%;
+        /* width: 100%; */
     }
 
     .populaires {
         width: 100%;
-        margin-top: 50px;
+        /* margin-top: 50px; */
     }
 
     .populaires-cards {
         display: flex;
-        flex-direction: row;
+        /* flex-direction: row; */
+        flex-direction: column;
+
         justify-content: space-between;
     }
 
     .populaires-cards a {
-        width: 30%;
+        /* width: 30%; */
+        width: 100%;
+
     }
 
     .populaires-cards .card-title {
