@@ -26,8 +26,8 @@
 }
 
 body {
-    min-width: 1024px;
-    max-width: 1440px;
+    min-width: 1024px !important;
+    max-width: 1440px !important;
     display: flex;
     justify-content: center;
 }
