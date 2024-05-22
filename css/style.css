@@ -154,6 +154,7 @@ line-height: 19px;
     min-height: 439px;
     max-height: 439px;
     box-shadow: 0px 3px 15px 0px #0000001A;
+    width: 23%; /* Utiliser un pourcentage pour la largeur */
 }
 .activitiesinmarseille {
     display: flex;
@@ -171,12 +172,13 @@ line-height: 18px;
 display: flex;
 justify-content: center;
 padding: 20px;
+white-space: nowrap; 
 }
 .activities-marseille img{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     height: 380px;
-    width: 298px;
+    width: 100%; 
 }
 .hebergement-global > * {
     flex-grow: 1;
@@ -295,6 +297,7 @@ a {
 
 .card-title {
     font-size: 16px;
+
 }
 
 .euro {
