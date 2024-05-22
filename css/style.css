@@ -96,11 +96,11 @@ body {
     display: flex;
     flex-direction: row;
 }
-.divafterheader h1 {
+.trouver-votre-hebergement h1 {
     font-size: 22px;
     padding-bottom: 8px;
 }
-.divafterheader p{
+.trouver-votre-hebergement p{
     margin-bottom: 25px;
 }
 .search-container {
@@ -130,7 +130,7 @@ font-weight: bold;
 font-weight: 400;
 line-height: 19px;
 }
-.hebergementdivglobar > div {
+.hebergement-global > div {
     display: flex;
     unicode-bidi: normal;
     flex-wrap: wrap;
@@ -140,14 +140,15 @@ line-height: 19px;
     flex-basis: 40%; */
 }
 
-.activities > div > section > .divforactivitiesrow {
+.activities > div > section > .activities-marseille-row {
     display: flex; 
     flex-wrap: nowrap; 
     justify-content: space-between;
     padding-right: 10px;
+    /* max-width: 1024px; */
 }
 
-.divforactivities{
+.activities-marseille{
     border-radius: 10px;
     margin-left: 10px;
     min-height: 439px;
@@ -162,7 +163,7 @@ line-height: 19px;
 .activities{
     padding-bottom: 80px;
 }
-.divforactivities h3 {
+.activities-marseille h3 {
 font-family: Raleway;
 font-size: 16px;
 font-weight: 700;
@@ -171,23 +172,24 @@ display: flex;
 justify-content: center;
 padding: 20px;
 }
-.divforactivities img{
+.activities-marseille img{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     height: 380px;
     width: 298px;
 }
-.hebergementdivglobar > * {
+.hebergement-global > * {
     flex-grow: 1;
     flex-shrink: 0;
     flex-basis: 100%;
+    justify-content: space-evenly;
 }
-.hebergementdivglobar{
+.hebergement-global{
     display: flex;
     flex-direction: row !important;
     flex-wrap: wrap;
 }
-.hebergementdivglobar h3 {
+.hebergement-global h3 {
     margin-left: 20px;
 }
 .card-content-hebergement{
@@ -275,8 +277,8 @@ a {
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    max-width: 230px;
-    min-width: 230px;
+    min-width: 25%; 
+    max-width: 25%;
     box-shadow: 0px 3px 15px 0px #0000001A;
 
 }
@@ -349,9 +351,11 @@ a {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-
+.populaires-cards-two {
+    max-width: 1024px;
+}
 .populaires-cards .card-content {
-    width: 67%;
+    /* width: 67%; */
     padding-left: 15px;
     display: flex;
     flex-direction: column;
@@ -447,4 +451,7 @@ text-align: left;
     display: flex;
     flex-direction: column;
     gap: 14px;
+}
+.noshebergements{
+
 }
